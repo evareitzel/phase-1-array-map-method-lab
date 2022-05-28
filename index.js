@@ -17,22 +17,18 @@ const tutorials = [
 
 //Eva's solution here
 
-// const titleCasedTutorials = tutorials.map(titleCased)
-// .toUpperCase
-
-
 const titleCased = () => {
-  return  tutorials.map((str) => {
+  return tutorials.map((str) => {
   const words = str.split(' ');
-  console.log("I am here.", words);
+  // console.log("I am here.", words);
   
 //  const firstLetter = words.map((words.charAt(0)).toUpperCase())
   const firstLetter = words.map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
   
-  console.log("I'm here too.", firstLetter);
+  // console.log("I'm here too.", firstLetter);
 
   const answer = firstLetter.join(' ');
-  console.log('I am here three!', answer);
+  // console.log('I am here three!', answer);
   
   // return firstLetter;
   return answer;
